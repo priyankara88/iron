@@ -5,307 +5,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>iron</title>
 
-
-    <title>Iron</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-1">
-                        One of three columns
-                    </div>
-                    <div class="col-sm-10">
-                        <div class="row">
-                            <div class="col-sm">
-                                <div class="row">
-                                    <div class="col-sm-6">
+    <header class="header">
 
-                                    </div>
-                                    <div class="col-sm-3">
+        <div class="topnav">
+            <img src="./images/Apple-Logo.png" style="width: 70px;height: 50px;" alt="">
+            <a class="active" href="#home">All Ads</a>
+            <a href="#news">English</a>
+        </div>
 
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <button type="submit" id="post">Post Your AD</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm">
-                                <p class="mainHeader">Buy & Sell Anything</p>
-                                <p class="subHeader">bigest clasified marketplace</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input type="text" placeholder="What are you looking for" name="search" id="name">
-                            </div>
-                            <div class="col-sm-3">
-
-                            </div>
-                            <div class="col-sm-3">
-                                <button type="submit" class="btnSearch">Search</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-1">
-                        One of three columns
-                    </div>
-
+        <div class="banner">
+            <h1>Buy & Sell Anything </h1>
+            <h2>biggest classified markertplace</h2>
+            <div class="wrapper">
+                <div class="searchBar">
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="What are you looking for?" value="" />
+                    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg>
+                  </button>
                 </div>
 
+                <button class="locationbtn">Select Location </button>
+                <button class="searchbutton">Search</button>
             </div>
         </div>
-        <div class="body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-1">
-                        test2
-                    </div>
-                    <div class="col-sm-10">
-                        <p class="card-title">Populer Categories</p>
-                        <div class="container">
+    </header>
+    <div class="content-divider"></div>
+    <h2>Popular Categories</h2>
+    <section class="skills clerfix">
+        <!-- single skill -->
+        <article class="skill">
+            <span class="skill-icon">
+          <i class="fas fa-mug-hot"></i>
+        </span>
+            <h4 class="skill-title">Electronic</h4>
+            <p class="skill-text">Lorem ipsum dolor sit. </p>
+        </article>
+        <!-- End single skill -->
 
+        <!-- single skill -->
+        <article class="skill">
+            <span class="skill-icon">
+          <i class="fas fa-glass-cheers"></i>
+        </span>
+            <h4 class="skill-title">Property</h4>
+            <p class="skill-text">Lorem ipsum dolor sit. </p>
+        </article>
+        <!-- End single skill -->
 
-                            <div class="test">
-                                <div class="card-wrapper " style="margin: 0 0.5em;">
-                                    <img src="images/img1.jpg" class="rounded-circle" alt="Cinque Terre" width="75" height="75">
-                                    <p class="populer">Electronic</p>
-                                </div>
-                                <div class="card-wrapper" style="margin: 0 0.5em;">
-                                    <img src="images/img1.jpg" class="rounded-circle" alt="Cinque Terre" width="75" height="75">
-                                    <p class="populer">Electronic</p>
-                                </div>
-                                <div class="card-wrapper" style="margin: 0 0.5em;">
-                                    <img src="images/img1.jpg" class="rounded-circle" alt="Cinque Terre" width="75" height="75">
-                                    <p class="populer">Electronic</p>
-                                </div>
-                                <div class="card-wrapper" style="margin: 0 0.5em;">
-                                    <img src="images/img1.jpg" class="rounded-circle" alt="Cinque Terre" width="75" height="75">
-                                    <p class="populer">Animals</p>
-                                </div>
-                                <div class="card-wrapper" style="margin: 0 0.5em;">
-                                    <img src="images/img2.png" class="rounded-circle" alt="Cinque Terre" width="75" height="75">
-                                    <p class="populer">Electronic</p>
-                                </div>
-                                <div class="card-wrapper" style="margin: 0 0.5em;">
-                                    <img src="images/img3.jpg" class="rounded-circle" alt="Cinque Terre" width="75" height="75">
-                                    <p class="populer">Animals</p>
-                                </div>
-                                <div class="card-wrapper" style="margin: 0 0.5em;">
-                                    <img src="images/img1.jpg" class="rounded-circle" alt="Cinque Terre" width="75" height="75">
-                                    <p class="populer">House</p>
-                                </div>
-                                <div class="card-wrapper" style="margin: 0 0.5em;">
-                                    <img src="images/img3.jpg" class="rounded-circle" alt="Cinque Terre" width="75" height="75">
-                                    <p class="populer">Electronic</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card-title">Featured Ads</p>
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="cards-wrapper">
-                                        <div class="card">
-                                            <img src="images/img1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img2.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="cards-wrapper">
-                                        <div class="card">
-                                            <img src="images/img1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img2.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="cards-wrapper">
-                                        <div class="card">
-                                            <img src="images/img1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img2.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text-Location">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="card d-none d-md-block">
-                                            <img src="images/img3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-title">Card title</p>
-                                                <p class="card-text">Location</p>
-                                                <p class="card-text-Price">Rs 50000.00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" style="background-color: black;" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" style="background-color: black;" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+        <!-- single skill -->
+        <article class="skill">
+            <span class="skill-icon">
+          <i class="fas fa-bomb"></i>
+        </span>
+            <h4 class="skill-title">Animal</h4>
+            <p class="skill-text">Lorem ipsum dolor sit.</p>
+        </article>
+        <!-- End single skill -->
+
+        <!-- single skill -->
+        <article class="skill">
+            <span class="skill-icon">
+          <i class="fas fa-mortar-pestle"></i>
+        </span>
+            <h4 class="skill-title">Service</h4>
+            <p class="skill-text">Lorem ipsum dolor sit. </p>
+        </article>
+        <!-- End single skill -->
+    </section>
+
+    <h2>Featured Ads</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <img src="./images/cr1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-none d-md-block">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="col-sm-1">
-                        test4
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="body-child">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-1">
-                        test3
-                    </div>
-                    <div class="col-sm-10">
-                        <p class="catlog">How it works?</p>
-                        <p class="subcatelog">3 easy step to go</p>
-
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators" style="color:black">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="images/imgstp2 (1).png" style="height:100px;" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/imgstp2 (1).jpeg" style="height:100px;" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/imgstp2 (2).png" style="height:100px;" alt="Second slide">
-                                </div>
-                            </div>
-                            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a> -->
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-
                     </div>
-                    <div class="col-sm-1">
-                        test5
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
 
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
-
+            </div>
+            <div class="carousel-item">
+                <div class="cards-wrapper">
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="cards-wrapper">
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <img src="./images/cr4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-1">
-                        test 4
-                    </div>
-                    <div class="col-sm-10">
-                        test5
-                    </div>
-                    <div class="col-sm-1">
-                        test6
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+
 </body>
 
 </html>
